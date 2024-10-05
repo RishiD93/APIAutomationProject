@@ -15,7 +15,7 @@ public class DeleteTests extends BaseTest {
                 .when()
                 .delete("/posts/1");
 
-        // Validate response status code (should be 200 for successful deletion)
+        // Validate response status code (should be 200 for successful deletio
         Assert.assertEquals(response.getStatusCode(), 200);
 
         // Optionally, print the response body (should be empty for successful deletion)
