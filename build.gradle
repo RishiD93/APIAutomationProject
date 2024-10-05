@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Rest Assured for API Testing
+    testImplementation 'io.rest-assured:rest-assured:4.4.0'
+
+    // TestNG for Test Management
+    testImplementation 'org.testng:testng:7.4.0'
+
+    // JSON Parser (Optional)
+    testImplementation 'org.json:json:20210307'
+}
+
+test {
+    useTestNG()
+}
